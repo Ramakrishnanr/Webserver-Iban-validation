@@ -42,6 +42,6 @@ For example, if any user types, ```http://localhost:80/**IBAN_VALUE**``` instead
 ```docker run --rm -it --network host --name webserver-instance ramedventures/webserver-iban:webserver-iban-test "localhost"```    
 
 3. In case of Mac OS,
-``` docker run --rm -it --network host --name webserver-instance ramedventures/webserver-iban:webserver-iban-test "host.docker.internal"    
+``` docker run --rm -it --network host --name webserver-instance ramedventures/webserver-iban:webserver-iban-test "host.docker.internal"```   
 
 4. A successfull tests run with Oks without any error.
