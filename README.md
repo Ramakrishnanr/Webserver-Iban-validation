@@ -38,7 +38,7 @@ Please ensure that the docker version is at least 18.03+ in order to avoid the i
 8. To connect to webserver via any of the browsers,
 ```http://localhost:80/IBAN/<IBAN_VALUE>``` 
 
-8a. We can also connect to webserver via mac or ubuntu terminal,        
+9. We can also connect to webserver via mac or ubuntu terminal,        
 ```curl http://localhost:80/IBAN/<IBAN_VALUE>```
 
 
