@@ -20,9 +20,6 @@ Please ensure that the docker version is at least 18.03+ in order to avoid the i
 3. Login to docker to pull the image.       
 ```docker login --username=<YOUR_USER_NAME>```  
 
-  A successful login results in the output of,
-  ```Login Succeeded```       
-  
 4. To pull the docker image for webserver,    
 ```docker pull ramedventures/webserver-iban:workingWebserver```   
 
