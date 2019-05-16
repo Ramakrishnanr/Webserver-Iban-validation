@@ -15,10 +15,10 @@ Initially the test is limited to verify the working of validation algorithm for 
 
 And the corresponding outputs are,    
 
-```test_Iban_lower_case (__main__.TestIbanValidation_Standalone) ... ok```
-```test_invalidIban (__main__.TestIbanValidation_Standalone) ... ok```
-```test_validIban_with_spaces (__main__.TestIbanValidation_Standalone) ... ok```
-```test_validIban_without_spaces (__main__.TestIbanValidation_Standalone) ... ok```
+```test_Iban_lower_case (__main__.TestIbanValidation_Standalone) ... ok```    
+```test_invalidIban (__main__.TestIbanValidation_Standalone) ... ok```    
+```test_validIban_with_spaces (__main__.TestIbanValidation_Standalone) ... ok```    
+```test_validIban_without_spaces (__main__.TestIbanValidation_Standalone) ... ok```   
 
 Thus this code has additional flexibility to handle IBAN in spaces format too although electronic format of IBAN requires no space. It is insenstive towards lower and upper cases while definining IBAN.
 
@@ -28,7 +28,7 @@ In addition to four tests, one more test for incorrect URL also has been tested.
 
 For example, if any user types, ```http://localhost:80/**IBAN_VALUE**``` instead of ```http://localhost:80/IBAN/**IBAN_VALUE**```, the code is designed to provide the details of correct URL in the same localhost domain for IBAN validation. The outputs of the testing are,   
 
-```test_Iban_lower_case (__main__.TestIbanValidation_WithWebServer) ... localhost 80 0 SocketKind.SOCK_STREAM 0 0```. ```ok```    
+```test_Iban_lower_case (__main__.TestIbanValidation_WithWebServer) ... localhost 80 0 SocketKind.SOCK_STREAM 0 0```. ```ok``` 
 ```test_IncorrectUrl (__main__.TestIbanValidation_WithWebServer) ... localhost 80 0 SocketKind.SOCK_STREAM 0 0```. ```ok```   
 ```test_invalidIban (__main__.TestIbanValidation_WithWebServer) ... localhost 80 0 SocketKind.SOCK_STREAM 0 0```. ```ok```    
 ```test_validIban_with_spaces (__main__.TestIbanValidation_WithWebServer) ... localhost 80 0 SocketKind.SOCK_STREAM 0 0```. ```ok```
