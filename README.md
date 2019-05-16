@@ -10,7 +10,7 @@ _You are not allowed to use someone's library_ - It is assumed that only non-sta
 
 Please ensure that the docker version is at least 18.03+ in order to avoid the issue related to networking in docker. For more details, please refer [here](https://docs.docker.com/docker-for-mac/networking/).   
     
-* _Python_, in case to alter / enhance the code in future.    
+* _Python 3+_, in case to alter / enhance the code in future.    
 
 ## Pulling docker image from docker hub
 1. If docker is not available, please download docker as per the instructions given [here](https://docs.docker.com/).   
