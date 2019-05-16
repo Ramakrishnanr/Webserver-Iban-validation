@@ -64,12 +64,5 @@ Please ensure that the docker version is at least 18.03+ in order to avoid the i
 Note: Since IBAN isn't getting retrieved from database, (as we are validating IBAN), all responses are made to 'ok' with a message.   
 
 ## Test details
-Testing details for this code can be found here.
-
-
-
-
-
-
-
+Testing details for this code can be found [here](https://github.com/Ramakrishnanr/Webserver-Iban-validation/blob/Ramakrishnanr-After-Tests-1/TESTING_DETAILS.md).
 
