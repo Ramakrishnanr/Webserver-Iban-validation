@@ -20,7 +20,7 @@ And the corresponding outputs are,
 ```test_validIban_with_spaces (__main__.TestIbanValidation_Standalone) ... ok```    
 ```test_validIban_without_spaces (__main__.TestIbanValidation_Standalone) ... ok```   
 
-Thus this code has additional flexibility to handle IBAN in spaces format too although electronic format of IBAN requires no space. It is also insenstive towards lower and upper cases while definining IBAN.
+Ok refers to the successful passing of the testing. Thus this code has additional flexibility to handle IBAN in spaces format too although electronic format of IBAN requires no space. It is also insenstive towards lower and upper cases while definining IBAN.
 
 ## Second step - Test IBAN validation with respect to web server
 As working of validation algorithm for IBAN has been tested, it is time to verify the successfulness in integration of the above algorithm with respect to the web server.
@@ -47,7 +47,7 @@ The outputs of the testing are,
 1. Run the webserver in the background using docker container.    
 ```docker run --rm -d -p 80:80 --name my-docker-instance2 ramedventures/webserver-iban:workingWebserver```
 
-2. Next step is to run the docker container which tests automatically. In case of Ubuntu,   
+2. Next step is to run the docker container which tests the outputs for above mentioned 9 test cases. In case of Ubuntu,   
 ```docker run --rm -it --network host --name webserver-instance ramedventures/webserver-iban:webserver-iban-test "localhost"```    
 
 3. In case of Mac OS,
