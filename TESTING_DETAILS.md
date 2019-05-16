@@ -20,7 +20,7 @@ And the corresponding outputs are,
 ```test_validIban_with_spaces (__main__.TestIbanValidation_Standalone) ... ok```    
 ```test_validIban_without_spaces (__main__.TestIbanValidation_Standalone) ... ok```   
 
-Thus this code has additional flexibility to handle IBAN in spaces format too although electronic format of IBAN requires no space. It is insenstive towards lower and upper cases while definining IBAN.
+Thus this code has additional flexibility to handle IBAN in spaces format too although electronic format of IBAN requires no space. It is also insenstive towards lower and upper cases while definining IBAN.
 
 ## Second step - Test IBAN validation with respect to web server
 As working of validation algorithm for IBAN has been tested, now we need to verify the successfulness in integration of the above algorithm with respect to the web server.
