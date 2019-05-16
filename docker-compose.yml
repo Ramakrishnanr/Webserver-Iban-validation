@@ -1,0 +1,12 @@
+version :  '3'
+
+services:
+  webserver-dev:
+    build: .
+    image: webserver-iban-dev
+    ports: 
+      - 80:80
+
+  webserver-test:
+   build: ./Test/
+   image: webserver-iban-test
