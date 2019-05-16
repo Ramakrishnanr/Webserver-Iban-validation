@@ -29,17 +29,14 @@ Please ensure that the docker version is at least 18.03+ in order to avoid the i
 5. To pull the docker image of automated testing for webserver,   
 ```docker pull ramedventures/webserver-iban:webserver-iban-test```  
 
-6. To verify the successful pulling of above two image,    
+6. To verify the successful pulling of above two image and make sure that two images are present under _TAG_,    
 ```docker images```     
-
-And make sure that two images are present under _TAG_.    
 
 7. To run the web server in background,     
 ```docker run --rm -d --name webserver-instance ramedventures/webserver-iban:workingWebserver```  
 
 8. To connect to webserver via any of the browsers,
 ```http://localhost:80/IBAN/<IBAN_VALUE>``` 
-
 
 8a. We can also connect to webserver via mac or ubuntu terminal,        
 ```curl http://localhost:80/IBAN/<IBAN_VALUE>```
