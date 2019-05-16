@@ -1,6 +1,6 @@
 # Testing details
 
-This section deals the various testing techniques being carried out for this code. It covers the aspect of flexibility being offered by this code too.
+This section deals the various testing techniques being carried out for this code. It covers the aspect of flexibility being offered by this code too. Source code of this testing is available at Tests.py.
 
 ## Automated testing
 
@@ -23,10 +23,12 @@ And the corresponding outputs are,
 Thus this code has additional flexibility to handle IBAN in spaces format too although electronic format of IBAN requires no space. It is also insenstive towards lower and upper cases while definining IBAN.
 
 ## Second step - Test IBAN validation with respect to web server
-As working of validation algorithm for IBAN has been tested, now we need to verify the successfulness in integration of the above algorithm with respect to the web server.
+As working of validation algorithm for IBAN has been tested, it is time to verify the successfulness in integration of the above algorithm with respect to the web server.
 In addition to four tests, one more test for incorrect URL also has been tested.    
 
-For example, if any user types, ```http://localhost:80/**IBAN_VALUE**``` instead of ```http://localhost:80/IBAN/**IBAN_VALUE**```, the code is designed to provide the details of correct URL in the same localhost domain for IBAN validation. The outputs of the testing are,   
+For example, if any user types, ```http://localhost:80/**IBAN_VALUE**``` instead of ```http://localhost:80/IBAN/**IBAN_VALUE**```, the code is designed to provide the details of the correct URL in the same localhost domain for IBAN validation. 
+
+The outputs of the testing are,   
 
 ```test_Iban_lower_case (__main__.TestIbanValidation_WithWebServer) ... localhost 80 0 SocketKind.SOCK_STREAM 0 0```. ```ok```
 
@@ -41,7 +43,7 @@ For example, if any user types, ```http://localhost:80/**IBAN_VALUE**``` instead
 
 ```test_validIban_without_spaces (__main__.TestIbanValidation_WithWebServer) ... localhost 80 0 SocketKind.SOCK_STREAM 0 0 ```. ```ok```    
 
-## To replicate the testing details
+## To replicate the testing
 1. Run the webserver in the background using docker container.    
 ```docker run --rm -d -p 80:80 --name my-docker-instance2 ramedventures/webserver-iban:workingWebserver```
 
