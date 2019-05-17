@@ -1,5 +1,5 @@
 # Webserver-Iban-Validation
-Build a Web server which responds to REST API call in order to validate a given IBAN. Please refer here to know about [IBAN](https://en.wikipedia.org/wiki/International_Bank_Account_Number).  
+Build a Web server which responds to REST API call in order to validate a given IBAN. To know about IBAN, please refer [here](https://en.wikipedia.org/wiki/International_Bank_Account_Number).  
 
 ## Coding test assumption
 _You are not allowed to use someone's library_ - It is assumed that only non-standard or external libraries aren't allowed. However inbuilt libraries are permissible.
