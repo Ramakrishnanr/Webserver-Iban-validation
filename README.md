@@ -14,28 +14,26 @@ Please ensure that the docker version is at least 18.03+ in order to avoid the i
 
 ## Pulling docker image from docker hub
 1. If docker is not available, please download docker as per the instructions given [here](https://docs.docker.com/).   
-
-2. Since this docker image is private, please ensure that your docker id has been already added as a collaborator by this repository's author.    
-
-3. Login to docker to pull the image.       
+    
+2. Login to docker to pull the image.       
 ```docker login --username=<YOUR_USER_NAME>```  
 
-4. To pull the docker image for webserver,    
+3. To pull the docker image for webserver,    
 ```docker pull ramedventures/webserver-iban:workingWebserver```   
 
-5. To pull the docker image of automated testing for webserver,   
+4. To pull the docker image of automated testing for webserver,   
 ```docker pull ramedventures/webserver-iban:webserver-iban-test```  
 
-6. To verify the successful pulling of above two image and make sure that two images are present under _TAG_,    
+5. To verify the successful pulling of above two image and make sure that two images are present under _TAG_,    
 ```docker images```     
 
-7. To run the web server in background,     
+6. To run the web server in background,     
 ```docker run --rm -d --name webserver-instance ramedventures/webserver-iban:workingWebserver```  
 
-8. To connect to webserver via any of the browsers,
+7. To connect to webserver via any of the browsers,
 ```http://localhost:80/IBAN/<IBAN_VALUE>``` 
 
-9. We can also connect to webserver via mac or ubuntu terminal,        
+8. We can also connect to webserver via mac or ubuntu terminal,        
 ```curl http://localhost:80/IBAN/<IBAN_VALUE>```
 
 
